@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "esNext",
+    "target": "es2015",
+    "outDir": "build",
+    "jsx": "preserve",
+    "jsxFactory": "createElement",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "alwaysStrict": true,
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "types": ["node", "rax"],
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@/*": ["src/*"],
+      "rax-app": [".rax/index.ts"],
+      "rax": ["node_modules/@types/rax"]
+    }
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["scripts"]
+}

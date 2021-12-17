@@ -1,0 +1,23 @@
+{
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "compilerOptions": {
+    "module": "esNext",
+    "target": "es2015",
+    "outDir": "build",
+    "jsx": "preserve",
+    "jsxFactory": "createElement",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "alwaysStrict": true,
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "types": ["node", "rax"]
+  },
+  "include": [
+    "src",
+    "types"
+  ],
+  "exclude": ["node_modules", "dist", "public"]
+}

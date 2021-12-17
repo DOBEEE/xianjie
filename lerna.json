@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "packages": [
+    "packages/schema-render",
+    "packages/meet",
+    "packages/demo"
+  ],
+  "command": {
+    "bootstrap": {
+      "noCi": true,
+      "npmClientArgs": [
+        "--no-package-lock"
+      ]
+    },
+    "version": {
+      "exact": false
+    },
+    "run": {
+      "parallel": true
+    },
+    "publish": {
+      "allowBranch": [
+        "*"
+      ],
+      "message": "chore(release): publish %s",
+      "ignoreChanges": [
+        "*.md"
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "afc-template-meet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.js",
+  "unpkg": "dist/unpkg/index.js",
+  "scripts": {
+    "build1": "npx babel src --out-dir dist --extensions \".ts,.tsx\"",
+    "buildg": "gulp",
+    "build": "rollup --config",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "dist",
+    "types"
+  ],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "rax": "^1.1.4"
+  },
+  "dependencies": {
+    "afc-schema-render": "^1.0.0",
+    "rax-children": "^1.0.0",
+    "rax-clone-element": "^1.0.0",
+    "rax-text": "^2.0.4",
+    "rax-view": "^1.2.0"
+  }
+}
